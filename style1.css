@@ -1,0 +1,271 @@
+*{
+    /* margin-left: 10px; */
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    /* margin-right: 20px; */
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Lato', sans-serif;
+    
+}
+/* Navbar start */
+
+#navbar{
+    background: white;
+    
+}
+
+#image{
+    margin-left: 50px;
+}
+
+#logo{
+    font-size: 36px;
+    text-shadow: 0px 1px 1px black;
+}
+#nav-menu{
+    padding: 20px;
+}
+
+
+.navbar-toggler span{
+    color: yellow;
+}
+.navbar-nav{
+    margin-left: 200px
+}
+
+
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+    
+    
+}
+
+.nav-item .nav-link:hover{
+    background: #ffa500;
+    color: white;
+}
+
+#navbar form a{
+    background: orange;
+    color: white;
+    border: none;
+    margin-right: 40px;
+}
+
+/* Navbar end */
+
+/* Home section start */
+
+.home{
+    width: 100;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(model.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+
+.home .content h5{
+    color: white;
+    font-size: 38px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+}
+
+.home .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+
+.changecontent::after{
+    content: ' ';
+    color: #ffa500;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+
+@keyframes changetext{
+    0%{content: " Fashion modeling";}
+    10%{content: " Jewelry modeling";}
+    20%{content: " Shoe modeling";}
+    30%{content: " Actor";}
+    40%{content: " Hand modeling";}
+    50%{content: " Fit modeling";}
+    60%{content: " Editorial modeling";}
+    70%{content: " Runway modeling";}
+    80%{content: " Eye modeling";}
+    90%{content: " Hair modeling";}
+    100%{content: " Stylist";}
+} 
+
+.home .content p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.home .content a{
+    padding: 10px;
+    background: white;
+    color: rgb(209, 97, 97);
+    background-color: rgb(11, 35, 41);
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.home .content a:hover{
+    background: rgb(92, 121, 79);
+    color: white;
+}
+
+/* Home section End */
+
+/* Modal start */
+
+
+
+.modal-header{
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+.modal-header h1{
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+    padding-left: 60px;
+}
+.modal-header h1 span{
+    color: #ffa500;
+    font-weight: 600;
+}
+.modal-body {
+    background-color: #a08888;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 40px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    height: 300px;
+  }
+  .modal-body a{
+    margin-left: 20px;
+  }
+  .modal-body .btn{
+    width: 120px;
+    font-size: 16px;
+    font-weight: 550;
+    background: #d6ba83;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+/* Modal End */
+
+/* Section Book Start */
+.book{
+    background: #f9f9f9;
+    padding: 50px;
+}
+.main-text h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+.main-text h1 span{
+    color: #ffa500;
+}
+.book .card{
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book .row{
+    margin-top: 30px;
+}
+.book form input{
+    padding: 20px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book form textarea{
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 160px;
+}
+.book .submit{
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background: #ffa500;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.book .submit:hover{
+    width: 180px;
+}
+@media (max-width:765px){
+    .book{
+        padding: 0;
+    }
+    .main-text h1{
+        padding: 20px;
+    }
+}
+/* Section Book End */
+
+/* Footer Start */
+#footer{
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background: #b9a4a4;
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+#footer h1 span{
+    color: #ffa500;
+}
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-links i:hover{
+    background: #ffa500;
+}
+/* Footer End */
